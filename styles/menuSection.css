@@ -1,0 +1,202 @@
+/***********************************/
+/*   MENU SECTION
+/***********************************/
+
+#menu h2 {
+  color: #927446;
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0.175em;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 1px 1px rgb(0 0 0 / 85%);
+  margin: 0.5em 0 100px 5px;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #menu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 6.5%;
+    width: 13%;
+    padding-top: 6.3%;
+    max-width: 200px;
+    min-width: 180px;
+    z-index: 1200;
+    background: linear-gradient(
+      180deg,
+      rgba(204, 204, 204, 0.075) 0%,
+      rgba(204, 204, 204, 0) 100%
+    );
+    background: -moz-linear-gradient(
+      180deg,
+      rgba(204, 204, 204, 0.075) 0%,
+      rgba(204, 204, 204, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(204, 204, 204, 0.075) 0%,
+      rgba(204, 204, 204, 0) 100%
+    );
+    background: -o-linear-gradient(
+      180deg,
+      rgba(204, 204, 204, 0.075) 0%,
+      rgba(204, 204, 204, 0) 100%
+    );
+    background: -ms-linear-gradient(
+      180deg,
+      rgba(204, 204, 204, 0.075) 0%,
+      rgba(204, 204, 204, 0) 100%
+    );
+  }
+}
+
+#menu #mobile-menu-icon {
+  display: block;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 0;
+  color: #c9c9c9;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#menu-item-text,
+#menu #mobile-menu-icon span {
+  font-size: 1.43em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#menu #mobile-menu-icon:hover,
+#menu #mobile-menu-icon.active {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#menu-item-text {
+  font-family: 'Barlow Condensed';
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5em;
+  display: block;
+  height: 2.1em;
+  padding: 3px 0 0;
+  background: rgba(0, 0, 0, 0.01);
+  z-index: 1000;
+}
+#menu-item-text:hover {
+  color: #bb8b48;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.5);
+}
+.active {
+  color: #c99854 !important;
+  font-weight: 500 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+#menu #main-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'open_sanslight', sans-serif;
+  font-size: 0.86em;
+  line-height: 1.2em;
+  text-transform: lowcase;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+#menu #main-menu > li.menu-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#menu #main-menu > li.menu-item > a,
+#menu #main-menu > li.menu-item > span {
+  display: block;
+  padding: 13px 10px;
+  background: rgba(0, 0, 0, 0.01);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+#menu #main-menu > li.menu-item > a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#menu #main-menu > li.menu-item.active > * {
+  font-family: 'open_sanslight', sans-serif;
+  color: #de7d5d;
+}
+
+@media (min-width: 768px) {
+  #menu #main-menu {
+    display: block;
+    margin: 8px 0;
+    background: none;
+    font-size: 0.9em;
+    line-height: 1;
+  }
+
+  #menu #main-menu > li.menu-item > a,
+  #menu #main-menu > li.menu-item > span {
+    padding: 7px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  #menu #main-menu {
+    margin: 12px 0;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+.fade-in-image {
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#logo {
+  width: 200px;
+  border: 1px solid #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo svg {
+  filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.5));
+}
+.img-holder {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 124px;
+  cursor: pointer;
+}
