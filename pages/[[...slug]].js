@@ -24,6 +24,7 @@ const FlexiblePage = ({ page, siteConfig }) => {
         )}
       </div>
       <Footer siteConfig={siteConfig} />
+      <div className="bg-overlay"></div>
     </div>
   );
 };
