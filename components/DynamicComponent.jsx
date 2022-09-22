@@ -1,9 +1,25 @@
-import { HeroSection } from './HeroSection';
-import { CardGridSection } from './CardGridSection';
+import { MenuSection } from './sections/MenuSection';
+import { HomeSection } from './sections/HomeSection';
+import { AboutSection } from './sections/AboutSection';
+import { TalentGridSection } from './sections/TalentGridSection';
+import { ServiceGridSection } from './sections/ServiceGridSection';
+import { FeaturedGridSection } from './sections/FeaturedGridSection';
+import { AchievementSection } from './sections/AchievementSection';
+import { ContactSection } from './sections/ContactSection';
+// import { HeroSection } from './HeroSection';
+// import { CardGridSection } from './CardGridSection';
 
 const componentsMap = {
-  HeroSection: HeroSection,
-  CardGridSection: CardGridSection,
+  MenuSection: MenuSection,
+  HomeSection: HomeSection,
+  AboutSection: AboutSection,
+  TalentGridSection: TalentGridSection,
+  ServiceGridSection: ServiceGridSection,
+  FeaturedGridSection: FeaturedGridSection,
+  AchievementSection: AchievementSection,
+  ContactSection: ContactSection,
+  // HeroSection: HeroSection,
+  // CardGridSection: CardGridSection,
 };
 
 export const DynamicComponent = (props) => {

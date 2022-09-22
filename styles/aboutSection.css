@@ -1,0 +1,110 @@
+/***********************************/
+/*   ABOUT SECTION
+/***********************************/
+
+.about {
+  color: var(--color-gray-100);
+  background-color: var(--color-black);
+  background-image: url('/images/bg/bg-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #00000050;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+/* .about::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('/images/bg/bg.overlay.png');
+  background-repeat: repeat;
+  opacity: 1;
+} */
+.about-heading {
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2.25em !important;
+  text-transform: uppercase;
+  line-height: 0.75em;
+  text-align: right;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px dotted rgb(194 139 58);
+  padding-bottom: 30px;
+  margin-right: 0.5em;
+}
+@media (min-width: 601px) {
+  .about-heading {
+    font-size: 4rem;
+  }
+}
+
+.about-paragraph {
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  font-size: 1em;
+  color: #ffffff;
+  letter-spacing: 0.035em;
+  line-height: 1.35em;
+  margin-bottom: 3rem;
+  margin-right: 0.5em;
+  padding-top: 0.25em;
+}
+.about h4 {
+  font-family: 'Advent Pro';
+  font-weight: 500;
+  color: #c28b3a;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+.about img {
+  border: 1px dotted rgb(194 139 58);
+  height: auto !important;
+  max-width: 45%;
+  margin-top: 5px;
+  margin-right: 0.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+
+  float: right !important;
+}
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+.about-buttons .theme-primary {
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  color: #01000d;
+  font-size: 1.05em;
+  letter-spacing: -0.01em;
+  word-spacing: 0.05em;
+}
+.about-container {
+  visibility: visible;
+  right: 4%;
+  bottom: 22%;
+  text-align: right;
+  padding: 0;
+  padding-left: 1rem;
+  background: none;
+}
+#about-content {
+  position: relative;
+  left: 39%;
+  top: 39%;
+  max-width: 700px;
+  z-index: 1;
+}

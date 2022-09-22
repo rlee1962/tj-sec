@@ -11,15 +11,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^5.3.0-rc.1",
     "front-matter": "^4.0.2",
     "glob": "^8.0.3",
     "markdown-to-jsx": "^7.1.7",
-    "next": "^12.1.0",
+    "next": "^12.3.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "react-scroll-motion": "^0.3.0",
+    "react-spring": "^9.5.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.11",
     "eslint": "^8.18.0",
-    "eslint-config-next": "^12.1.0"
+    "eslint-config-next": "^12.1.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
