@@ -1,13 +1,29 @@
 import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Markdown from 'markdown-to-jsx';
 import { Featured } from './FeaturedSection';
+import { motion } from 'framer-motion';
 
 export const FeaturedGridSection = (props) => {
+  const router = useRouter();
+  // console.log(router.asPath);
+
   return (
-    <div
+    <motion.div
+      key={router.asPath}
       id="featured"
       className="featured"
       data-sb-field-path={props['data-sb-field-path']}
+      initial={{ opacity: 0, y: 0 }}
+      animate={{
+        opacity: 1,
+        y: [0, -200, 200, 0],
+        default: { ease: 'linear' },
+        delay: 2,
+        duration: 5000,
+      }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.75, times: [0, 0.2, 1], delay: 0.25 }}
     >
       <div className="featured-grid">
         {props.heading && (
@@ -28,6 +44,6 @@ export const FeaturedGridSection = (props) => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
