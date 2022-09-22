@@ -15,8 +15,12 @@ export const AboutSection = (props) => {
       className="about"
       data-sb-field-path={props['data-sb-field-path']}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      // animate={{ opacity: 1, y: ['-100%', '0%'], delay: 0.5 }}
+      animate={{
+        opacity: 1,
+        y: [0, -200, 200, 0],
+        delay: 2,
+        duration: 5000,
+      }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.75, times: [0, 0.2, 1], delay: 0.25 }}
     >
