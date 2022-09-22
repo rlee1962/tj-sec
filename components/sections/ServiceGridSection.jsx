@@ -15,10 +15,15 @@ export const ServiceGridSection = (props) => {
       className="service"
       data-sb-field-path={props['data-sb-field-path']}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      // animate={{ opacity: 1, y: ['-100%', '0%'], delay: 0.5 }}
+      animate={{
+        opacity: 1,
+        y: [0, -200, 200, 0],
+        // default: { ease: 'linear' },
+        delay: 2,
+        duration: 5000,
+      }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.75, times: [0, 0.2, 1], delay: 0.25 }}
+      transition={{ type: 'spring', duration: 0.8 }}
     >
       <div
         id="services"
