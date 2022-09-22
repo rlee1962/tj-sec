@@ -1,0 +1,159 @@
+/***********************************/
+/*   SERVICE SECTION
+/***********************************/
+
+.service {
+  color: var(--color-gray-100);
+  /* background-color: var(--color-black); */
+  background-image: url('/images/bg/bg-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+/* .service::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('/images/bg/bg.overlay.png');
+  background-repeat: repeat;
+  opacity: 1;
+} */
+
+.service-heading {
+  font-family: 'Advent Pro';
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  text-align: right;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px dotted rgb(194 139 58);
+  padding-bottom: 30px;
+  padding-right: 2px;
+}
+@media (min-width: 601px) {
+  .service-heading {
+    font-size: 2.125rem;
+  }
+}
+
+#service h3 {
+  font-family: 'Barlow Condensed';
+  font-weight: bold;
+  color: #bd8940;
+  font-size: 1.25em !important;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  text-align: left;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  padding-bottom: 1.5rem;
+  padding-right: 2px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+@media (min-width: 601px) {
+  #service h3 {
+    font-size: 4rem;
+  }
+}
+h3.service-heading {
+  color: #bd8940;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.service-subheading {
+  font-family: 'Advent Pro';
+  font-weight: 500;
+  font-size: 2em;
+  color: #bd8940;
+  line-height: 1.125em;
+  padding-bottom: 1.5rem;
+}
+
+.service-paragraph {
+  font-family: 'Barlow Condensed';
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 1rem;
+  display: flex;
+  text-align: left;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+}
+
+.service-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.serviceImg {
+  border: 1px dotted #bd8940 !important;
+}
+
+/***********************************/
+/*   SERVICE CARD
+/***********************************/
+
+.service-grid {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  position: relative;
+  top: 42%;
+  left: 40%;
+  width: 54%;
+  z-index: 1;
+}
+
+.service-grid-heading {
+  font-size: 1.2rem !important;
+}
+
+.service-grid-subheading {
+  font-size: 1.125rem;
+}
+
+.service-grid-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.75rem;
+  row-gap: 3em;
+  margin-top: 3em;
+}
+
+@media (min-width: 601px) {
+  .service-grid-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#service-icon {
+  border: 1px dotted rgba(184, 136, 69, 1) !important;
+  padding: 1px !important;
+}
+
+/***********************************/
+/*   GRID BOXES
+/***********************************/
+
+#services .parent {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#services .grid-item h3 {
+  color: #bd8940;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: -1rem;
+}

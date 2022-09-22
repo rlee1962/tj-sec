@@ -1,19 +1,50 @@
+@import url('reset.css');
+@import url('normalize.css');
+/***********************************/
+/*   TAILWIND STYLESHEETS
+/***********************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***********************************/
+/*   IMPORTED SECTIONS
+/***********************************/
+@import url('menuSection.css');
+@import url('homeSection.css');
+@import url('aboutSection.css');
+@import url('talentSection.css');
+@import url('serviceSection.css');
+@import url('featuredSection.css');
+/* @import url('modal.css');
+@import url('achievementSection.css');
+@import url('achieveMenu.css'); */
+/* @import url('../node_modules/aos/dist/aos.css'); */
+
+/***********************************/
+/*   IMPORTED FONTS
+/***********************************/
+@import url('fonts.css');
+/***********************************/
+/*   DEFAULT STYLES
+/***********************************/
 :root {
   --color-white: #ffffff;
   --color-black: #02001d;
-  --color-gray-100: #f3f4f6;
-  --color-gray-500: #75747d;
-  --color-blue: #4c57c5;
-  --color-yellow: #ffde00;
-
-  font-size: 16px;
+  --color-gray-100: #747474;
+  --color-gray-500: #191919;
+  --color-blue: #030d24;
+  --color-yellow: #c28b3a;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-  background-color: var(--color-gray-100);
-  color: var(--color-black);
-  font-family: "Helvetica Neue",sans-serif;
+  font-family: 'Barlow Condensed';
+  color: var(--color-white);
+  background-color: var(--color-gray-500);
   margin: 0;
   padding: 0;
 }
@@ -24,7 +55,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-family: 'Advent Pro';
+  font-weight: bold;
   margin: 0 0 1rem 0;
 }
 
@@ -41,152 +73,76 @@ p {
 * {
   box-sizing: border-box;
 }
-
-/* --- Layout --- */
-
-.outer {
-  padding-left: 3vw;
-  padding-right: 3vw;
+/***********************************/
+/*   SECTIONS
+/***********************************/
+#home,
+#about,
+#talent,
+#services,
+#featured,
+#achievements,
+#contact {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
 }
-
+/***********************************/
+/*   BG-OVERLAY & INNER
+/***********************************/
 .inner {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 48rem;
+  right: 4%;
+  bottom: 22%;
+  text-align: right;
+  padding: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: none;
+  max-width: 700px;
 }
-
-.small-margin {
-  margin: 1vw;
+@media (min-width: 640px) {
+  .inner {
+    width: 80%;
+  }
 }
-
-/* --- Footer --- */
-.footer {
-  margin-top: 3rem;
+@media (min-width: 768) {
+  .inner {
+    width: 75%;
+  }
 }
-
-.footer-container {
-  border-top: 1px solid var(--color-gray-500);
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-.footer-content a {
-  border-bottom: 1px solid var(--color-blue);
-  color: var(--color-blue);
-}
-
-/* --- HeroSection --- */
-
-.hero {
-  background-color: var(--color-black);
-  background-image: url("/bg.svg");
+.bg-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('/images/bg/bg.overlay.png');
   background-repeat: repeat;
-  color: var(--color-gray-100);
-  padding-bottom: 2rem;
-  padding-top: 3rem;
+  z-index: 10;
 }
-
-.hero-heading {
-  font-size: 3rem;
-}
-
-@media (min-width: 601px) {
-  .hero-heading {
-    font-size: 4rem;
-  }
-}
-
-.hero-subheading {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-.hero-subheading a {
-  border-bottom: 1px solid var(--color-white);
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* --- CardGrid --- */
-
-.card-grid {
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  position: relative;
-  z-index: 1;
-}
-
-.card-grid-heading {
-  font-size: 2.5rem;
-}
-
-.card-grid-subheading {
-  font-size: 1.125rem;
-}
-
-.card-grid-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-@media (min-width: 601px) {
-  .card-grid-cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* --- Card --- */
-
-.card {
-  border: 1px solid var(--color-blue);
-  padding: 1.5rem 2rem;
-  position: relative;
-  transition: all 0.35s ease;
-}
-
-.card:hover {
-  border-color: var(--color-blue);
-  color: var(--color-blue);
-}
-
-.card:before {
-  border: 1px solid var(--color-blue);
-  content: "";
-  height: 100%;
-  left: -1px;
-  position: absolute;
-  top: -1px;
-  transform: translate(0,0);
-  transition: all 0.35s ease;
-  width: 100%;
-  z-index: -1;
-}
-
-.card:hover:before {
-  transform: translate(0.33333em, 0.33333em);
-}
-
-.card-heading {
-  font-size: 1.5rem;
-}
-
-/* --- Button --- */
-
+/***********************************/
+/*   BUTTONS
+/***********************************/
 .button {
   background-color: var(--color-yellow);
-  border: 0.1rem solid var(--color-yellow);
+  border: 0.1rem solid var(--color-black);
   border-radius: 0.2rem;
   color: var(--color-black);
   display: inline-block;
-  font-size: 1.125rem;
-  padding: 1rem 1.5rem;
+  font-size: 13px;
+  padding: 0.5rem 1rem;
   transition: all 0.35s ease;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 0em;
+  background: rgb(133, 96, 45);
+  background: linear-gradient(
+    45deg,
+    rgba(133, 96, 45, 1) 0%,
+    rgba(223, 197, 154, 1) 52%,
+    rgba(131, 94, 42, 1) 100%
+  );
+  border: 0.1rem solid #533812;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 .button.theme-secondary {
