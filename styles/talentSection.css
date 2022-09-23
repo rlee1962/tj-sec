@@ -88,13 +88,19 @@
 }
 .talent-container {
   text-align: center;
-  display: block;
   position: relative;
   visibility: visible;
   right: -32%;
-  padding-top: 18%;
-  max-width: 700px;
+  top: 50%;
+  width: 700px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  transform: translate(3.75%, 50%);
   z-index: 1;
 }
 
