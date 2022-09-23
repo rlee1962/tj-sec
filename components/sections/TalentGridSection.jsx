@@ -10,6 +10,8 @@ import {
 } from 'react-icons/fa';
 
 export const TalentGridSection = (props) => {
+  const router = useRouter();
+
   const [count, setCount] = useState(0);
   const [recount, setRecount] = useState(1);
   const length = props.cards.length;
@@ -22,16 +24,16 @@ export const TalentGridSection = (props) => {
 
   // console.log(count);
   // console.log(recount);
-  // console.log(length);
+  // console.log(router.asPath);
 
-  useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setCount((count) => (count < length - 1 ? count + 1 : (count = 0)));
-      setRecount((recount) => (recount < length ? recount + 1 : (recount = 1)));
-    }, 6000);
+  // useEffect(() => {
+  //   const slideInterval = setInterval(() => {
+  //     setCount((count) => (count < length - 1 ? count + 1 : (count = 0)));
+  //     setRecount((recount) => (recount < length ? recount + 1 : (recount = 1)));
+  //   }, 6000);
 
-    return () => setInterval(slideInterval);
-  }, [length]);
+  //   return () => setInterval(slideInterval);
+  // }, [length]);
 
   const goToPrevious = () => {
     setCount(count > 0 ? count - 1 : length - 1);
