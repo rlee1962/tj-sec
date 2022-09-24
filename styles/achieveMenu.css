@@ -1,0 +1,280 @@
+/***********************************/
+/*   ACHIEVEMENT MENU
+/***********************************/
+.achieve-menu {
+  padding: 10px;
+  position: relative;
+  margin: 10px;
+  height: 78px;
+  margin-top: -1em;
+  border-top: 1px dotted rgb(194 139 58);
+  border-bottom: 1px dotted rgb(194 139 58);
+}
+a.button.theme-achieve {
+  font-family: 'Barlow Condensed';
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.01rem;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  text-shadow: none;
+  display: block;
+}
+a.button.theme-achieve:hover {
+  color: #ca8c2e;
+}
+.achieve-button {
+  text-align: left;
+  line-height: 1em;
+  height: 26px;
+  margin: 0 2px;
+  padding-top: 13px;
+}
+
+/***********************************/
+/*   TABS
+/***********************************/
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+svg.uniform-height,
+#achievements svg {
+  position: relative;
+  width: 1.25em;
+  height: 1.25em;
+  display: block;
+  margin: 0em -10px -40px 1em;
+  padding-top: 0px;
+  background: transparent;
+  clear: both;
+  fill: #ca8c2e;
+  stroke: rgba(210, 210, 210, 0.4);
+  stroke-width: '5.5';
+  margin-right: -3ch !important;
+}
+svg.uniform-height:hover,
+#achievements svg:hover > .icon-parent,
+#achievements svg:hover {
+  fill: #fff;
+  stroke: rgba(210, 210, 210, 0.4);
+}
+
+.tabpanel.styled-tabs ul.nav {
+  position: absolute;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  /* max-width: 1200px; */
+  list-style: none;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  border-bottom: none;
+  align-items: center;
+  justify-content: center;
+  max-height: 78px;
+  width: 64%;
+  top: -50px;
+}
+
+.tabpanel.styled-tabs ul.nav > li {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  -moz-flex: 1;
+  flex: 1 1;
+  border-top: 1px dotted rgba(194, 139, 58, 0.9);
+  border-bottom: 1px dotted rgba(194, 139, 58, 0.9);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 78px;
+}
+
+.isActive {
+  color: #c99854 !important;
+  font-weight: 500 !important;
+  position: relative !important;
+  display: block !important;
+  margin: 0 !important;
+  margin-top: -15px !important;
+  text-align: left;
+  -moz-flex: 1 !important;
+  flex: 1 1;
+  padding-top: 20px !important;
+  padding-bottom: 15px !important;
+  height: 76px;
+  background: rgba(0, 0, 0, 0.45) !important;
+  fill: #ca8c2e;
+  /* stroke: rgba(210, 210, 210, 0.4); */
+  /* stroke-width: '5.5'; */
+  transition-delay: 1s, 250ms;
+}
+.isActive:hover,
+.isActive:hover > #achievements svg {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+
+svg.uniform-height:active,
+#achievements svg:active {
+  fill: #ca8c2e;
+  stroke: rgba(210, 210, 210, 0.4);
+  stroke-width: '5.5';
+}
+.tabs-tab1 {
+  color: #ffffffcc;
+  font-weight: 500;
+  margin-top: -15px !important;
+  text-align: left;
+  -moz-flex: 1 !important;
+  flex: 1 1;
+  padding-top: 20px !important;
+  padding-bottom: 15px !important;
+  height: 76px;
+}
+.tabs-tab1:hover {
+  color: #ca8c2e;
+  font-weight: 500;
+  fill: #ca8c2e;
+  stroke: rgba(210, 210, 210, 0.4);
+  stroke-width: '5.5';
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+.tabpanel.styled-tabs ul.nav > li > a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2.5;
+  padding: 0;
+  font-size: 1em;
+  -webkit-transition: all 0.4s, padding 0.2s;
+  transition: all 0.4s, padding 0.2s;
+  border: none !important;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a > .icon {
+  margin-right: 8px;
+  font-size: 1.35em;
+  vertical-align: middle;
+}
+
+.tabpanel.styled-tabs ul.nav[text-hidden-xs='true'] > li > a > .icon {
+  font-size: 1.75em;
+  margin-right: 0;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a > span {
+  font-size: 0.8em;
+}
+
+.tabpanel.styled-tabs ul.nav[text-hidden-xs='true'] > li > a > span {
+  display: none;
+}
+
+.tabpanel.styled-tabs ul.nav > li > a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translate3d(0, 150%, 0);
+  transform: translate3d(0, 150%, 0);
+}
+
+@media (min-width: 768px) {
+  .tabpanel.styled-tabs ul.nav > li > a {
+    font-size: 0.9em;
+  }
+
+  .tabpanel.styled-tabs ul.nav > li > a > .icon,
+  .tabpanel.styled-tabs ul.nav[text-hidden-xs='true'] > li > a > .icon {
+    margin-right: 11px;
+    font-size: 1.5em;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-sm='true'] > li > a > .icon {
+    font-size: 1.75em;
+    margin-right: 0;
+  }
+
+  .tabpanel.styled-tabs ul.nav > li > a > span {
+    font-size: 0.9em;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-xs='true'] > li > a > span {
+    display: inline;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-sm='true'] > li > a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .tabpanel.styled-tabs ul.nav > li > a {
+    font-size: 1em;
+  }
+
+  .tabpanel.styled-tabs ul.nav > li > a > .icon,
+  .tabpanel.styled-tabs ul.nav[text-hidden-xs='true'] > li > a > .icon,
+  .tabpanel.styled-tabs ul.nav[text-hidden-sm='true'] > li > a > .icon {
+    margin-right: 12px;
+    font-size: 1.6em;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-md='true'] > li > a > .icon {
+    font-size: 1.75em;
+    margin-right: 0;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-sm='true'] > li > a > span {
+    display: inline;
+  }
+
+  .tabpanel.styled-tabs ul.nav[text-hidden-md='true'] > li > a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+.tabpanel.styled-tabs .tab-content > .tab-pane {
+  padding: 25px 15px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .tabpanel.styled-tabs .tab-content > .tab-pane {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+  }
+}
+
+.tabpanel.styled-tabs .tab-content > .tab-pane p {
+  font-size: 1em;
+}
