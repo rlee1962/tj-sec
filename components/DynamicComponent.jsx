@@ -4,7 +4,7 @@ import { AboutSection } from './sections/AboutSection';
 import { TalentGridSection } from './sections/TalentGridSection';
 import { ServiceGridSection } from './sections/ServiceGridSection';
 import { FeaturedGridSection } from './sections/FeaturedGridSection';
-import { AchievementSection } from './sections/AchievementSection';
+import { AchievementGridSection } from './sections/AchievementGridSection';
 import { ContactSection } from './sections/ContactSection';
 // import { HeroSection } from './HeroSection';
 // import { CardGridSection } from './CardGridSection';
@@ -16,7 +16,7 @@ const componentsMap = {
   TalentGridSection: TalentGridSection,
   ServiceGridSection: ServiceGridSection,
   FeaturedGridSection: FeaturedGridSection,
-  AchievementSection: AchievementSection,
+  AchievementGridSection: AchievementGridSection,
   ContactSection: ContactSection,
   // HeroSection: HeroSection,
   // CardGridSection: CardGridSection,

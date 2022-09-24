@@ -168,8 +168,69 @@ sections:
             theme: primary
         card: ImageGallery
   # ********* ACHIEVEMENTS SECTION *********
-  - type: AchievementSection
-    heading: Achievement Section
+  - type: AchievementGridSection
+    heading: Our Achievements
+    cards:
+      - photo: tab.1
+        subheading: Phasellus ornare enim
+        paragraph: >-
+          Aliquam mattis tincidunt lectus, sed scelerisque nunc sodales.
+
+          Nam mattis lectus sed commodo molestie. Fusce lobortis pharetra egestas. Nunc non ligula commodo, lobortis orci sit amet, molestie eros.
+
+
+          Quisque dignissim, dui ac laoreet semper.
+
+
+          Curabitur eu metus gravida arcu volutpat auctor. Aliquam erat volutpat. Duis a faucibus nibh, vitae viverra dolor. Duis scelerisque accumsan condimentum.
+
+
+          Proin aliquam lorem non nulla sollicitudin tincidunt. Nunc non ligula commodo, lobortis orci sit amet, molestie eros.
+        buttons:
+          - label: best portrait
+            url: 'https://docs.stackbit.com/getting-started/'
+            theme: achieve
+        url: '0'
+        float: floated-left
+      - photo: tab.2
+        subheading: PRAESENT PLACERAT URNA
+        paragraph: >-
+          Aliquam malesuada molestie magna, vel lacinia arcu semper non. Morbi in dictum ante, quis euismod odio. Maecenas vel ligula dapibus, blandit dolor eu, consectetur ligula. Quisque dignissim, dui ac laoreet semper, sapien massa posuere risus, sed blandit eros nunc sit amet orci. Proin aliquam lorem non nulla sollicitudin tincidunt. Aenean ultrices vehicula elit, at venenatis orci facilisis sed.
+
+
+          Curabitur euismod gravida purus id tempus. Morbi sollicitudin ex in felis volutpat, a molestie arcu mollis. Vivamus ut nisl id sem aliquet finibus. Sed blandit volutpat velit pretium auctor. Quisque in purus quam. Ut at dictum libero, tristique egestas libero. Nulla egestas cursus finibus. Cras sit amet dolor massa. Praesent eget metus sit amet tellus sagittis sollicitudin. Maecenas vel ligula dapibus, blandit dolor eu, consectetur ligula.
+        buttons:
+          - label: best image
+            url: 'https://docs.stackbit.com/getting-started/'
+            theme: achieve
+        url: '1'
+        float: floated-right
+      - photo: tab.3
+        subheading: NULLAM MOLESTIE MOLESTIE
+        paragraph: >-
+          Maecenas vel ligula dapibus, blandit dolor eu, consectetur ligula. Curabitur euismod gravida purus id tempus. Morbi sollicitudin ex in felis volutpat, a molestie arcu mollis. Vivamus ut nisl id sem aliquet finibus. Sed blandit volutpat velit pretium auctor. Quisque in purus quam. Ut at dictum libero, tristique egestas libero. Nulla egestas cursus finibus. Cras sit amet dolor massa. Praesent eget metus sit amet tellus sagittis sollicitudin.
+
+
+          Aliquam malesuada molestie magna, vel lacinia arcu semper non. Morbi in dictum ante, quis euismod odio. Maecenas vel ligula dapibus, blandit dolor eu, consectetur ligula. Quisque dignissim, dui ac laoreet semper, sapien massa posuere risus, sed blandit eros nunc sit amet orci. Proin aliquam lorem non nulla sollicitudin tincidunt. Aenean ultrices vehicula elit, blandit volutpat velit at venenatis orci facilisis sed.
+        buttons:
+          - label: best image
+            url: 'https://docs.stackbit.com/getting-started/'
+            theme: achieve
+        url: '2'
+        float: floated-left
+      - photo: tab.4
+        subheading: AENEAN AT ENIM EGET
+        paragraph: >-
+          Praesent id rhoncus justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante arcu, rhoncus tempor vestibulum vel, imperdiet a enim. Duis dignissim lacus a ante dignissim rhoncus. Integer luctus felis sed augue sagittis maximus. Vestibulum posuere ac dolor id tristique. Phasellus imperdiet erat lacinia velit rutrum vestibulum. Quisque dignissim, dui ac laoreet semper, tristique egestas libero sapien massa posuere risus, sed blandit eros nunc sit amet orci.
+
+
+          Vivamus ut nisl id sem aliquet finibus. Sed blandit volutpat velit pretium auctor. Quisque in purus quam. Ut at dictum libero, tristique egestas libero. Mauris commodo ante magna, sed sollicitudin nunc ornare ac. Nunc id elit vel orci aliquet euismod tristique vitae orci. Pellentesque quam arcu, tristique egestas libero rutrum blandit orci non, accumsan cursus lectus. Phasellus eros leo, luctus eget lacus a, ullamcorper luctus ante.
+        buttons:
+          - label: best photo
+            url: 'https://docs.stackbit.com/getting-started/'
+            theme: achieve
+        url: '3'
+        float: floated-right
   # ********* CONTACT SECTION *********
   - type: ContactSection
     heading: Contact Section
