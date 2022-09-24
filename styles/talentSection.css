@@ -16,6 +16,7 @@
   transition: all 0.5s ease;
   padding-bottom: 2rem;
   padding-top: 3rem;
+  overflow: hidden;
 }
 /* .talent::after {
   content: '';
@@ -56,6 +57,12 @@
   letter-spacing: 0.035em;
   line-height: 1.35em;
   margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 6%;
+  padding-right: 5%;
 }
 .talent h4 {
   font-family: 'Advent Pro';
@@ -90,9 +97,9 @@
   text-align: center;
   position: relative;
   visibility: visible;
-  right: -32%;
+  right: -18.5%;
   top: 50%;
-  width: 700px;
+  width: 78%;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -101,6 +108,8 @@
   align-content: stretch;
   align-items: center;
   transform: translate(3.75%, 50%);
+  padding-left: 12%;
+  padding-right: 10%;
   z-index: 1;
 }
 

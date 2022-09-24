@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useRouter } from 'next/router';
 import Markdown from 'markdown-to-jsx';
 // import Carousel from 'framer-motion-carousel';
 import { TalentSection } from './TalentSection';
@@ -10,21 +9,12 @@ import {
 } from 'react-icons/fa';
 
 export const TalentGridSection = (props) => {
-  const router = useRouter();
-
   const [count, setCount] = useState(0);
   const [recount, setRecount] = useState(1);
   const length = props.cards.length;
 
-  const refCount = useRef();
-  const refRecount = useRef(recount);
-
-  const newcount = 0;
-  const newRecount = 1;
-
   // console.log(count);
   // console.log(recount);
-  // console.log(router.asPath);
 
   // useEffect(() => {
   //   const slideInterval = setInterval(() => {

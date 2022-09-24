@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Markdown from 'markdown-to-jsx';
 import { Card } from './ServiceSection';
 import { motion } from 'framer-motion';
+import { fadeAnimation } from '../motion/motionAnimation';
 
 export const ServiceGridSection = (props) => {
   const router = useRouter();
@@ -11,19 +12,10 @@ export const ServiceGridSection = (props) => {
   return (
     <motion.div
       key={router.asPath}
+      {...fadeAnimation}
       id="service"
       className="service"
       data-sb-field-path={props['data-sb-field-path']}
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        y: [0, -200, 200, 0],
-        // default: { ease: 'linear' },
-        delay: 2,
-        duration: 5000,
-      }}
-      exit={{ opacity: 0 }}
-      transition={{ type: 'spring', duration: 0.8 }}
     >
       <div
         id="services"
