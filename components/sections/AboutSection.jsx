@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Markdown from 'markdown-to-jsx';
 import { Button } from '../Button';
 import { motion } from 'framer-motion';
+import { fadeAnimation } from '../motion/motionAnimation';
 
 export const AboutSection = (props) => {
   const router = useRouter();
@@ -11,18 +12,10 @@ export const AboutSection = (props) => {
   return (
     <motion.div
       key={router.asPath}
+      {...fadeAnimation}
       id="about"
       className="about"
       data-sb-field-path={props['data-sb-field-path']}
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        y: [0, -200, 200, 0],
-        delay: 2,
-        duration: 5000,
-      }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.75, times: [0, 0.2, 1], delay: 0.25 }}
     >
       <section id="about-content">
         <div className="about-container">
