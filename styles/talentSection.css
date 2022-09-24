@@ -18,18 +18,6 @@
   padding-top: 3rem;
   overflow: hidden;
 }
-/* .talent::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-image: url('/images/bg/bg.overlay.png');
-  background-repeat: repeat;
-  opacity: 1;
-} */
 .talent-heading {
   font-family: 'Advent Pro';
   font-weight: bold;
@@ -157,7 +145,7 @@
 .right-arrow svg {
   height: 30px;
   width: 30px;
-  opacity: 0.09;
+  opacity: 0.25;
 }
 .left-arrow svg:hover,
 .right-arrow svg:hover {

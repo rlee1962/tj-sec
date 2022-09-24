@@ -1,0 +1,168 @@
+/***********************************/
+/*   ACHIEVEMENTS SECTION
+/***********************************/
+
+.achievements {
+  color: var(--color-gray-100);
+  background-color: var(--color-black);
+  background-image: url('/images/bg/bg-6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #00000050;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+.achievements-heading {
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2.25em !important;
+  text-transform: uppercase;
+  line-height: 0.75em;
+  text-align: right;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  padding-bottom: 21px;
+  display: block;
+  position: absolute;
+  top: -112px;
+  right: 8%;
+}
+@media (min-width: 601px) {
+  .achievements-heading {
+    font-size: 4rem;
+  }
+}
+.achievements-subheading {
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  color: #c28b3a;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-right: 0.125em;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.achievements-paragraph {
+  font-family: 'Barlow Condensed';
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #ffffff;
+  letter-spacing: 0.035em;
+  text-align: right;
+  line-height: 1.35em;
+  margin-bottom: 3rem;
+}
+.achievements-paragraph p {
+  font-weight: 200;
+  line-height: 1.25em;
+}
+.achievements h4 {
+  font-family: 'Advent Pro';
+  font-weight: 500;
+  color: #c28b3a;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+.achievements img {
+  border: 1px dotted rgb(194 139 58);
+  height: auto !important;
+  max-width: 45%;
+  margin-top: 5px;
+  margin-right: 0.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+  float: right !important;
+}
+.achievementsImg {
+  border: 1px dotted rgb(194 139 58) !important;
+  float: left !important;
+}
+.achievements-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+.achievements-buttons .theme-primary {
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  color: #01000d;
+  font-size: 1.05em;
+  letter-spacing: -0.01em;
+  word-spacing: 0.05em;
+}
+.achievements-container {
+  text-align: center;
+  position: relative;
+  visibility: visible;
+  right: -19.5%;
+  top: 50%;
+  width: 78%;
+  min-height: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  transform: translate(2.5%, 80%);
+  padding-left: 22.25%;
+  padding-right: 6%;
+  z-index: 15;
+}
+
+#img-container {
+  margin-top: 2em;
+  width: 100%;
+}
+
+#floated-left {
+  float: left;
+  width: 260px;
+  margin-right: 30px;
+}
+#floated-right {
+  float: right;
+  width: 260px;
+  margin-left: 50px;
+  margin-right: 0.75em;
+}
+
+.bs-mic {
+  position: relative;
+  top: 7px;
+  left: 2px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+}
+
+.icon-parent {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 30px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  vertical-align: middle;
+  height: min-content;
+  padding-left: 3ch;
+  padding-right: 3ch;
+}
+
+.icon-div1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
