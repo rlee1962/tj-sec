@@ -26,16 +26,18 @@
 
 .service-heading {
   font-family: 'Advent Pro';
-  color: #fff;
-  font-size: 2rem;
   font-weight: bold;
+  color: #ffffff;
+  font-size: 2.25em !important;
   text-transform: uppercase;
-  line-height: 1.1em;
+  line-height: 0.75em;
   text-align: right;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  border-bottom: 1px dotted rgb(194 139 58);
-  padding-bottom: 30px;
-  padding-right: 2px;
+  padding-bottom: 21px;
+  display: block;
+  position: absolute;
+  top: -60px;
+  right: 8%;
 }
 @media (min-width: 601px) {
   .service-heading {
@@ -104,13 +106,22 @@ h3.service-heading {
 /***********************************/
 
 .service-grid {
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 0rem;
+  padding-top: 2rem;
   position: relative;
-  top: 42%;
-  left: 40%;
-  width: 54%;
-  z-index: 1;
+  top: 48.5%;
+  left: 13.5%;
+  width: 57%;
+  transform: translate(10%, 10%);
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+  border-top: 1px dotted rgb(194 139 5);
+  text-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+  margin-left: 16%;
+  margin-right: 5%;
+  z-index: 15;
 }
 
 .service-grid-heading {
@@ -124,9 +135,9 @@ h3.service-heading {
 .service-grid-cards {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2.75rem;
-  row-gap: 3em;
-  margin-top: 3em;
+  grid-gap: 3.75rem;
+  row-gap: 4em;
+  margin-top: 1em;
 }
 
 @media (min-width: 601px) {
