@@ -22,7 +22,7 @@ export const ServiceGridSection = (props) => {
         className="service"
         data-sb-field-path={props['data-sb-field-path']}
       >
-        <div className="service-grid">
+        <div id="service-grid" className="service-grid">
           {props.heading && (
             <h2 className="service-heading " data-sb-field-path=".heading">
               {props.heading}
