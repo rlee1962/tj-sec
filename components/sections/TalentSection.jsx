@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import Markdown from 'markdown-to-jsx';
 import { Button } from '../Button';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import { fadeAnimation, sliderAnimation } from '../motion/motionAnimation';
+import Image from 'next/image';
 
 export const TalentSection = (props) => {
   const router = useRouter();
@@ -22,15 +22,15 @@ export const TalentSection = (props) => {
     <AnimatePresence>
       <motion.div
         key={router.asPath}
+        {...fadeAnimation}
         id="talent"
         className="talent"
         data-sb-field-path={props['data-sb-field-path']}
-        {...fadeAnimation}
       >
         <section id="main-content">
           <div className="talent-container">
             <AnimatePresence>
-              <motion.div key={props.heading} {...sliderAnimation}>
+              <motion.div key={props.photo} {...sliderAnimation}>
                 <Image
                   src={`/images/carousel/${props.photo}.png`}
                   alt="image1"
