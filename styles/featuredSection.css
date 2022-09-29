@@ -137,11 +137,11 @@ h3.featured-heading {
 }
 .featuredBtn:hover > .featured-bottom {
   font-weight: 400;
-  color: #000;
+  color: #000000e1;
 }
 #featured > div > div > div > button:hover > div.featured-bottom > h3 {
   font-weight: 700;
-  color: #000;
+  color: #00000085;
   text-shadow: none;
 }
 
