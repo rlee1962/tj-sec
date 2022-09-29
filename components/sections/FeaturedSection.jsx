@@ -3,12 +3,13 @@ import Modal from '../Modal';
 import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'markdown-to-jsx';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ImageCarousel } from '../featured/ImageCarousel';
 import { ImageText } from '../featured/ImageText';
 import { ImageGallery } from '../featured/ImageGallery';
 
 export const Featured = (props) => {
-  const [showModal, setShowModal] = useState(props.card);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -20,12 +21,20 @@ export const Featured = (props) => {
         {showModal === `${props.card}` && <ImageGallery />}
       </Modal> */}
 
+      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        Fancy Modal
+      </Modal>
       <Link href={props.url ?? '/'} as={'#featured'}>
         <div className="featured-inner">
-          <button
+          <motion.button
             className="featuredBtn"
-            onClick={() => setShowModal(props.card)}
+            onClick={() => setIsOpen(true)}
             data-sb-field-path={props['data-sb-field-path']}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.25 },
+            }}
+            whileTap={{ scale: 0.99 }}
           >
             {' '}
             <div className="featured-top">
@@ -54,7 +63,7 @@ export const Featured = (props) => {
                 </Markdown>
               )}
             </div>
-          </button>
+          </motion.button>
         </div>
       </Link>
     </>
