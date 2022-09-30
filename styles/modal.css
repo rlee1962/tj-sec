@@ -3,6 +3,23 @@
 /***********************************/
 
 .modal-body {
+  width: clamp(50%, 800px, 90%);
+  height: min(50%, 460px);
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 2px;
+  display: flex;
+  color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(255, 255, 255, 0.75); */
+  /* box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.75); */
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+}
+/* .modal-body {
   color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 50%;
@@ -11,7 +28,7 @@
   background-color: rgba(255, 255, 255, 0.95);
   padding: 50px;
   z-index: 1000;
-}
+} */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -21,5 +38,33 @@
   background-color: rgba(0, 0, 0, 0.75);
 
   padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1000;
+}
+.modal-close {
+  position: absolute;
+  right: -2%;
+  top: -4%;
+  display: contents;
+  cursor: pointer;
+  z-index: 1000;
+}
+svg.modal-close-button {
+  display: block;
+  fill: #927446;
+  stroke: #927446;
+  stroke-width: 3em;
+  position: absolute;
+  right: -2%;
+  top: -5%;
+  scale: 125%;
+  cursor: pointer;
+  z-index: 1000;
+  background: transparent;
+}
+svg.modal-close-button:hover {
+  fill: #cfcecd;
+  stroke: #cfcecd;
 }
