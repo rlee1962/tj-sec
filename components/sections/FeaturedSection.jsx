@@ -10,6 +10,7 @@ import { ImageGallery } from '../featured/ImageGallery';
 
 export const Featured = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log(props.card);
 
   return (
     <>
@@ -22,48 +23,52 @@ export const Featured = (props) => {
       </Modal> */}
 
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        Fancy Modal
+        {isOpen === `${props.card}` && <ImageCarousel />}
+        {isOpen === `${props.card}` && <ImageText />}
+        {isOpen === `${props.card}` && <ImageGallery />}
       </Modal>
       <Link href={props.url ?? '/'} as={'#featured'}>
         <div className="featured-inner">
-          <motion.button
-            className="featuredBtn"
-            onClick={() => setIsOpen(true)}
-            data-sb-field-path={props['data-sb-field-path']}
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.25 },
-            }}
-            whileTap={{ scale: 0.99 }}
-          >
-            {' '}
-            <div className="featured-top">
-              <Image
-                src={`/images/featured/${props.photo}.jpg`}
-                alt={props.heading}
-                width="250%"
-                height="175%"
-              />
-            </div>
-            <div className="featured-bottom">
-              {props.heading && (
-                <h3
-                  // className="featured-subheading"
-                  data-sb-field-path=".heading"
-                >
-                  {props.heading}
-                </h3>
-              )}
-              {props.paragraph && (
-                <Markdown
-                  className="featured-paragraph"
-                  data-sb-field-path=".paragraph"
-                >
-                  {props.paragraph}
-                </Markdown>
-              )}
-            </div>
-          </motion.button>
+          <AnimatePresence>
+            <motion.button
+              className="featuredBtn"
+              onClick={() => setIsOpen(true)}
+              data-sb-field-path={props['data-sb-field-path']}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.25 },
+              }}
+              whileTap={{ scale: 0.99 }}
+            >
+              {' '}
+              <div className="featured-top">
+                <Image
+                  src={`/images/featured/${props.photo}.jpg`}
+                  alt={props.heading}
+                  width="250%"
+                  height="175%"
+                />
+              </div>
+              <div className="featured-bottom">
+                {props.heading && (
+                  <h3
+                    // className="featured-subheading"
+                    data-sb-field-path=".heading"
+                  >
+                    {props.heading}
+                  </h3>
+                )}
+                {props.paragraph && (
+                  <Markdown
+                    className="featured-paragraph"
+                    data-sb-field-path=".paragraph"
+                  >
+                    {props.paragraph}
+                  </Markdown>
+                )}
+              </div>
+            </motion.button>
+          </AnimatePresence>
         </div>
       </Link>
     </>
