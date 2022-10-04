@@ -9,7 +9,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 function Modal({ open, children, onClose }) {
   const router = useRouter();
-  console.log(onClose);
+  // console.log(onClose);
 
   if (!open) return null;
   return ReactDom.createPortal(
@@ -47,6 +47,7 @@ function Modal({ open, children, onClose }) {
         </motion.div>
       </AnimatePresence>
     </>,
+
     document.getElementById('modal-root'),
   );
 }

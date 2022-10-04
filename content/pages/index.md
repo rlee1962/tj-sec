@@ -234,4 +234,20 @@ sections:
   # ********* CONTACT SECTION *********
   - type: ContactSection
     heading: Contact Section
+  # # ********* IMAGE CAROUSEL *********
+  # - type: ImageCarousel
+  #   heading: Image Carousel
+  #   cards:
+  #     - photo: featured.2
+  #       heading: Lorem ipsum-1
+  #       subheading: Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu.
+  #       caption: Caption for image 1
+  #     - photo: featured.3
+  #       heading: Lorem ipsum-2
+  #       subheading: Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu.
+  #       caption: Caption for image 1
+  #     - photo: featured.4
+  #       heading: Lorem ipsum-3
+  #       subheading: Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu.
+  #       caption: Caption for image 1
 ---
