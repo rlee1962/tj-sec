@@ -6,6 +6,7 @@ import { ServiceGridSection } from './sections/ServiceGridSection';
 import { FeaturedGridSection } from './sections/FeaturedGridSection';
 import { AchievementGridSection } from './sections/AchievementGridSection';
 import { ContactSection } from './sections/ContactSection';
+// import { ImageCarousel } from './featured/ImageCarousel';
 // import { HeroSection } from './HeroSection';
 // import { CardGridSection } from './CardGridSection';
 
@@ -18,6 +19,7 @@ const componentsMap = {
   FeaturedGridSection: FeaturedGridSection,
   AchievementGridSection: AchievementGridSection,
   ContactSection: ContactSection,
+  // ImageCarousel: ImageCarousel,
   // HeroSection: HeroSection,
   // CardGridSection: CardGridSection,
 };

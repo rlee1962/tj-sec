@@ -1,0 +1,25 @@
+/***********************************/
+/*   IMPORTED SECTIONS
+/***********************************/
+
+/* .carouselModal {
+  width: 90%;
+  height: 400px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+} */
+.imageCarousel {
+  width: 90%;
+  height: 400px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

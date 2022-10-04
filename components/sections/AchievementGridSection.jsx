@@ -26,7 +26,7 @@ export const AchievementGridSection = (props) => {
   };
 
   // console.log(indexed);
-  console.log(isActive);
+  // console.log(isActive);
   // console.log(props.cards.findIndex((elem) => elem.url == [viewTab]));
 
   return (

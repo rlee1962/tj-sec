@@ -1,0 +1,17 @@
+# ********* IMAGE CAROUSEL *********
+---
+- cards:
+    - caption: "Caption for image 1"
+      heading: "Lorem ipsum-1"
+      photo: featured.2
+      subheading: "Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu."
+    - caption: "Caption for image 1"
+      heading: "Lorem ipsum-2"
+      photo: featured.3
+      subheading: "Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu."
+    - caption: "Caption for image 1"
+      heading: "Lorem ipsum-3"
+      photo: featured.4
+      subheading: "Nunc elementum scelerisque lobortis. Nunc ac nulla posuere, interdum massa at, condimentum orci. Nunc a leo suscipit, pretium arcu eu."
+  heading: "Image Carousel"
+  type: ImageCarousel
