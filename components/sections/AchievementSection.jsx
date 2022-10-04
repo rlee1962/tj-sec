@@ -7,7 +7,7 @@ import Markdown from 'markdown-to-jsx';
 export const Achievements = (props) => {
   const [showModal, setShowModal] = useState(props.card);
 
-  console.log(props.float);
+  // console.log(props.float);
 
   return (
     <>

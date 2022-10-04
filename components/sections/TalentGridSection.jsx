@@ -1,6 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import Markdown from 'markdown-to-jsx';
-// import Carousel from 'framer-motion-carousel';
+import React, { useEffect, useState } from 'react';
 import { TalentSection } from './TalentSection';
 import {
   FaRegArrowAltCircleLeft,
