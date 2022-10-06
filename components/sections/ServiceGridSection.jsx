@@ -7,7 +7,7 @@ import { fadeAnimation } from '../motion/motionAnimation';
 
 export const ServiceGridSection = (props) => {
   const router = useRouter();
-  console.log(router);
+  // console.log(router);
 
   return (
     <motion.div

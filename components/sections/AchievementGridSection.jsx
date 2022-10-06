@@ -136,7 +136,11 @@ export const AchievementGridSection = (props) => {
               </li>
             </ul>
             <AnimatePresence initial={false}>
-              <motion.div key={viewTab} {...rotateAnimation}>
+              <motion.div
+                // key={viewTab}
+                key={router.asPath}
+                {...rotateAnimation}
+              >
                 {props.subheading && (
                   <Markdown data-sb-field-path=".subheading">
                     {props.subheading}

@@ -146,7 +146,7 @@ sections:
           - label: Read More
             url: 'https://docs.stackbit.com/getting-started/'
             theme: primary
-        card: GalleryCard
+        card: 'GalleryCard'
       - photo: featured.5
         heading: Image with Text
         paragraph: >-
@@ -156,7 +156,7 @@ sections:
           - label: Read More
             url: 'https://docs.stackbit.com/getting-started/'
             theme: primary
-        card: ImageText
+        card: 'ImageText'
       - photo: featured.7
         heading: Alternative Gallery
         paragraph: >-
@@ -166,7 +166,7 @@ sections:
           - label: Read More
             url: 'https://docs.stackbit.com/getting-started/'
             theme: primary
-        card: ImageGallery
+        card: 'ImageGallery'
   # ********* ACHIEVEMENTS SECTION *********
   - type: AchievementGridSection
     heading: Our Achievements
