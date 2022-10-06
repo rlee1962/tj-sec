@@ -47,6 +47,7 @@ function Modal({ open, children, onClose }) {
       </motion.div>
       {/* </AnimatePresence> */}
     </>,
+
     document.getElementById('modal-root'),
   );
 }
