@@ -10,7 +10,8 @@ import { ImageGallery } from '../featured/ImageGallery';
 
 export const Featured = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(props.card);
+
+  // console.log(props.card);
 
   return (
     <>
@@ -23,10 +24,11 @@ export const Featured = (props) => {
       </Modal> */}
 
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        {isOpen === `${props.card}` && <ImageCarousel />}
-        {isOpen === `${props.card}` && <ImageText />}
-        {isOpen === `${props.card}` && <ImageGallery />}
+        {props.card === 'GalleryCard' && <ImageCarousel />}
+        {props.card === 'ImageText' && <ImageText />}
+        {props.card === 'ImageGallery' && <ImageGallery />}
       </Modal>
+
       <Link href={props.url ?? '/'} as={'#featured'}>
         <div className="featured-inner">
           <AnimatePresence>

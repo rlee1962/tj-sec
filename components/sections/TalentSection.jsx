@@ -15,7 +15,7 @@ export const TalentSection = (props) => {
   }
 
   // console.log(router.asPath);
-  console.log(sliderAnimation);
+  // console.log(sliderAnimation);
   // console.log(fadeAnimation.key);
 
   return (
