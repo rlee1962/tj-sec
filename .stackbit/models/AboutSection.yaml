@@ -1,12 +1,15 @@
 name: AboutSection
+label: About Section
 labelField: heading
+groups:
+  - SectionComponents
 fields:
   - type: string
     name: heading
-    default: Card Heading
+    default: About Our Studio
   - type: markdown
     name: paragraph
-    default: Card description goes here ...
+    default: About Paragraph
   - type: list
     name: buttons
     items:
