@@ -10,12 +10,7 @@ import { ImageGallery } from '../featured/ImageGallery';
 
 export const Featured = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-<<<<<<< HEAD
-
-  // console.log(props.card);
-=======
   // console.log(props.photo);
->>>>>>> eddb1c15a4ef7c1cad7e46b8c5c1940384597e9f
 
   return (
     <>
@@ -27,15 +22,11 @@ export const Featured = (props) => {
         {showModal === `${props.card}` && <ImageGallery />}
       </Modal> */}
 
-<<<<<<< HEAD
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-=======
       <Modal
         className="carouselModal"
         open={isOpen}
         onClose={() => setIsOpen(false)}
       >
->>>>>>> eddb1c15a4ef7c1cad7e46b8c5c1940384597e9f
         {props.card === 'GalleryCard' && <ImageCarousel />}
         {props.card === 'ImageText' && <ImageText />}
         {props.card === 'ImageGallery' && <ImageGallery />}
